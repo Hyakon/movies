@@ -37,7 +37,7 @@ const formatQuery = (query) => {
 };
 
 const getMovieByID = async (id) => {
-  await fetch(`http://www.omdbapi.com/?apikey=${APIKEY}&i=${id}`)
+  await fetch(`//www.omdbapi.com/?apikey=${APIKEY}&i=${id}`)
     .then((res) => res.json())
     .then((res) => {
       const title = res.Title;
@@ -67,9 +67,7 @@ const getMovieByID = async (id) => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  fetch(
-    `http://www.omdbapi.com/?apikey=${APIKEY}&s=${formatQuery(search.value)}`
-  )
+  fetch(`//www.omdbapi.com/?apikey=${APIKEY}&s=${formatQuery(search.value)}`)
     .then((res) => res.json())
     .then(async (res) => {
       let ids = [];
