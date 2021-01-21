@@ -1,0 +1,13 @@
+.box {
+  height: 100px;
+  border: 10px solid green;
+  background: aquamarine;
+}
+
+.hidden {
+  background: red;
+}
+
+.not-visible {
+  opacity: 0;
+}

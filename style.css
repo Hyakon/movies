@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 10px;
+}
+
+input {
+  margin-top: 20px;
+  width: 98%;
+}
+
+.hidden {
+  display: none;
+}
+
+.hiddens {
+  opacity: 0;
+}
+
+.card {
+  display: flex;
+  border: solid 5px olive;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+img {
+  height: 300px;
+  margin: 10px;
+}
+
+.info {
+  margin: 10px;
+}
+.info p {
+  margin: 10px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  height: 70%;
+  width: 50%;
+
+  text-align: center;
+  background: bisque;
+  margin: auto;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
